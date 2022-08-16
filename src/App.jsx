@@ -1,5 +1,5 @@
 import { useDispatch, useSelector } from 'react-redux';
-import { incrementCreator, decrementCreator } from './store/countReducer'
+import { incrementCreator, asyncIncrementCreator, decrementCreator } from './store/countReducer'
 import './App.scss';
 
 function App() {
@@ -13,7 +13,7 @@ function App() {
         <p className="buttons__count">{count}</p>
 
         <div className="buttons__container">
-          <button className="buttons__button" onClick={() => dispatch(incrementCreator())}>Increment ++</button>
+          <button className="buttons__button" onClick={() => dispatch(asyncIncrementCreator())}>Increment ++</button>
           <button className="buttons__button" onClick={() => dispatch(decrementCreator())}>Decrement --</button>
           <button className="buttons__button">Get Users</button>
         </div>
