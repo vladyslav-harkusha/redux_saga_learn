@@ -14,9 +14,10 @@ export const countReducer = (state = defaultState, action) => {
 
     case DECREMENT:
       return { ...state, count: state.count - 1 }
-  }
 
-  return state;
+    default:
+      return state;
+  }
 };
 
 export const incrementCreator = () => ({ type: INCREMENT });

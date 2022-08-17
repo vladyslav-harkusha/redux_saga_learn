@@ -15,6 +15,6 @@ function* decrementWorker() {
 
 
 export function* countWatcher() {
-  yield takeEvery(ASYNC_INCREMENT, incrementWorker)
-  yield takeEvery(ASYNC_DECREMENT, decrementWorker)
+  yield takeEvery(ASYNC_INCREMENT, incrementWorker);
+  yield takeEvery(ASYNC_DECREMENT, decrementWorker);
 }

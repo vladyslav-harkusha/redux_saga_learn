@@ -26,9 +26,10 @@
     color: white;
     font-size: 20px;
     text-transform: uppercase;
-    border-color: wheat;
+    border: 2px solid wheat;
     transition: color 0.2s;
-    box-shadow: 4px 4px 2px 3px rgb(184, 184, 184);
+    box-shadow: 5px 5px 3px 1px rgba(0, 0, 0, 0.3);
+    border-radius: 0;
 
     &:hover {
       color: wheat;
@@ -36,7 +37,7 @@
 
     &:active {
       transform: translate(5px, 5px);
-      box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.3);
+      box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.3);
     }
   }
 }
@@ -48,6 +49,8 @@
   }
 
   &__item {
+    max-width: 300px;
+    margin: 0 auto;
     color: darkblue;
     text-align: center;
     font-style: italic;
